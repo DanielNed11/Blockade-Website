@@ -1,0 +1,117 @@
+/* FULL PAGE LAYOUT  */
+.blockade-main {
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    gap: 80px;
+    align-items: start;
+    max-width: 1400px;
+    margin: 80px auto;
+    padding: 0 40px;
+}
+
+.blockade-main h1,
+h2, h3 {
+    color: #7A170D;
+}
+
+
+/* TEXT LEFT */
+.blockade-left {
+    width: 100%;
+}
+
+.blockade-header {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.blockade-header h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #7A170D;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    color: #D23624;
+    margin-top: 10px;
+}
+
+.blockade-about {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* BOARD RIGHT */
+.blockade-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+}
+
+.blockade-right h2 {
+    font-size: 2rem;
+    color: #7A170D;
+    margin-bottom: 20px;
+}
+
+.board-container {
+    width: 400px;
+    height: 400px;
+    overflow: visible;
+}
+
+/* BOARD 5x5 */
+.board {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 4px;
+    transform: rotateX(45deg) rotateZ(45deg) scale(1.2);
+    transform-style: preserve-3d;
+}
+
+/* Tiles */
+.tile {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #FBCE9D;
+    border-radius: 8px;
+    transform-style: preserve-3d;
+    transition: all 0.3s ease;
+}
+
+.tile:hover {
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
+    transform: rotateX(45deg) rotateZ(45deg) scale(1.25);
+}
+
+/* Pieces */
+.piece {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 60%;
+    height: 60%;
+    border-radius: 5px;
+    transform: translateZ(0px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.large { width: 75%; height: 75%; }
+.medium { width: 55%; height: 55%; }
+.small { width: 35%; height: 35%; }
+
+.yellow { background-color: yellow; }
+.red { background-color: red; }
+.green { background-color: green; }
+.blue { background-color: blue; }
+.clear { background-color: transparent; }

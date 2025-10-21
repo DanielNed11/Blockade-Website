@@ -1,0 +1,246 @@
+/* Game page structure */
+.game-page {
+    padding: 80px 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    color: #7A170D;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.game-page h1 {
+    text-align: center;
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+    font-family: 'Russo One', sans-serif;
+}
+
+.tagline {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #D23624;
+}
+
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Section content */
+.section h2 {
+    font-size: 2.2rem;
+    color: #D23624;
+    margin-bottom: 10px;
+    font-family: 'Russo One', sans-serif;
+}
+
+.section p, .section li {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #7A170D;
+}
+
+.strategy-quote {
+    font-size: 1.6rem;
+    color: #7A170D;
+    font-style: italic;
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    border-left: 5px solid #D23624;
+    background-color: #FBCE9D;
+    border-radius: 8px;
+    max-width: 700px;
+}
+
+
+.image-placeholder {
+    width: 100%;
+    height: 280px;
+    background-color: #FBCE9D;
+    color: #7A170D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #D23624;
+    border-radius: 16px;
+    font-size: 1.3rem;
+    font-style: italic;
+    margin: 30px 0;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.board-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.board-image {
+    width: 45%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.board-image:hover {
+    transform: scale(1.03);
+}
+
+/* Dice Roller */
+.dice-explainer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.die {
+    display: inline-block;
+    font-size: 3rem;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    width: 80px;
+    height: 80px;
+    background-color: #fce388;
+    line-height: 80px;
+    text-align: center;
+    border: 2px solid #D23624;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.die:hover {
+    transform: scale(1.1);
+}
+
+.die[data-color="red"] { border-color: red; }
+.die[data-color="yellow"] { border-color: goldenrod; }
+
+.dice-button {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    background-color: #D23624;
+    color: white;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
+}
+
+.dice-button:hover {
+    background-color: #DC6341;
+}
+
+.dice-summary {
+    margin-top: 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #7A170D;
+}
+
+.dice-note {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 8px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Tree Preview */
+.mini-board {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.mini-tile {
+    width: 100px;
+    height: 100px;
+    background-color: #FBCE9D;
+    border-radius: 12px;
+    border: 2px solid #D23624;
+    position: relative;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.mini-tile:hover {
+    transform: scale(1.05);
+}
+
+.piece {
+    position: absolute;
+    border-radius: 4px;
+    background-color: red;
+    border: 2px solid #7A170D;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.piece.small {
+    width: 30px;
+    height: 30px;
+    z-index: 3;
+}
+
+.piece.medium {
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+}
+
+.piece.large {
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+
+.move-msg {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #7A170D;
+    min-height: 1.2em;
+}
+
+.reset-wrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.reset-button {
+    background-color: #D23624;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.reset-button:hover {
+    background-color: #DC6341;
+}

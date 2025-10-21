@@ -1,0 +1,164 @@
+/* MAIN CONTAINER */
+
+.sprints-gallery {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.gallery-title {
+    font-size: 2.5rem;
+    color: #7A170D;
+    margin: 30px 0 20px;
+    font-family: 'Russo One', sans-serif;
+}
+
+
+/* DOT PROGRESS */
+
+.dot-progress-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 40px;
+    height: 40px;
+}
+
+.progress-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: #D23624;
+    opacity: 0.2;
+    transform: translateY(-50%);
+    border-radius: 2px;
+    z-index: 0;
+}
+
+.progress-line-fill {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 4px;
+    background-color: #D23624;
+    width: 0;
+    transform: translateY(-50%);
+    border-radius: 2px;
+    z-index: 1;
+    transition: width 0.3s ease;
+}
+
+.dot-nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    height: 100%;
+    z-index: 2;
+}
+
+.dot {
+    width: 16px;
+    height: 16px;
+    background-color: #D23624;
+    border-radius: 50%;
+    opacity: 0.4;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.dot.active {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+/* MILESTONE SCROLLING STRUCTURE */
+
+.milestone-wrapper {
+    width: 100vw;
+    height: calc(100vh - 140px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 0 5vw;
+    box-sizing: border-box;
+}
+
+.milestone-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.milestone-track {
+    display: flex;
+    height: 100%;
+    align-items: stretch;
+    gap: 10vw;
+}
+
+/* MILESTONE CARD */
+.milestone-card {
+    scroll-snap-align: center;
+    flex: none;
+    width: 90vw;
+    height: 100%;
+    background-color: #FBCE9D;
+    border-radius: 25px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.milestone-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.milestone-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.milestone-card h3 {
+    font-size: 2rem;
+    color: #D23624;
+    margin-bottom: 10px;
+    font-family: 'Russo One', sans-serif;
+}
+
+.milestone-card p {
+    font-size: 1.2rem;
+    color: #7A170D;
+    font-family: 'Poppins', sans-serif;
+}
+
+.milestone-filler {
+    flex: none;
+    width: 90vw;
+    height: 90%;
+}
+
+.text-column {
+    width: 50%;
+    padding: 10px;
+}
+.image-column {
+    width: 70%;
+    padding: 10px;
+}
+.image-column img {
+    width: 100%;
+    height: auto;}

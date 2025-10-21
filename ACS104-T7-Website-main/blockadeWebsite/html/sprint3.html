@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blockade - Sprint 3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Russo+One&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/sprints.css">
+</head>
+<body>
+<header class="header">
+    <nav class="navbar">
+        <a href="../index.html" class="logo">
+            <img src="../img/BLOCKADE-Photoroom.png" alt="Blockade Logo"/>
+        </a>
+        <ul class="nav-links">
+            <li><a href="game.html">Game</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="sprint1.html">Sprint 1</a></li>
+            <li><a href="sprint2.html">Sprint 2</a></li>
+            <li><a href="sprint3.html">Sprint 3</a></li>
+            <li><a href="sprint4.html">Sprint 4</a></li>
+            <li><a href="download.html">Download</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="sprints-gallery">
+    <h1 class="gallery-title">Sprint 3 Milestones</h1>
+
+    <!-- Dot Nav -->
+    <div class="dot-progress-container">
+        <div class="progress-line"></div>
+        <div class="progress-line-fill" id="progressLineFill"></div>
+        <div class="dot-nav">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    <div class="milestone-wrapper" id="milestoneWrapper">
+        <div class="milestone-track">
+
+            <section class="milestone-card fade-in">
+                <h3>PROG: Application final Version - Daniel, Mira, Hildo, Attiqa</h3>
+                <h2>Blockade Game Development </h2>
+                <div class="milestone-section">
+                    <h4>1. Initial Setup: Game Structure and Design</h4>
+                    <p><b>Overview:</b> In this sprint, the basic structure of the game was set up. The core gameplay mechanics, including player movements, basic board setup, and initial layout were implemented. The focus was on defining the game’s main logic and ensuring that all foundational elements were in place.</p>
+                </div>
+                <div class="milestone-section">
+                    <h4>2. UI and Game Logic: Game Interface and Rules Implementation</h4>
+                    <p><b>Overview:</b> In this sprint, the user interface (UI) was developed using JavaFX. Screens were designed to allow players to interact with the game, including a visual representation of the board, move options, and dice rolls. Additionally, key game logic, such as move validation and scoring, was implemented to ensure smooth gameplay.</p>
+                </div>
+                <div class="milestone-section">
+                    <h4>3. Blockades and Move System: Strategic Gameplay Features</h4>
+                    <p><b>Overview:</b> The blockade system was introduced, allowing players to strategically block their opponents’ movements. The move system was refined to include movement points and legal moves, ensuring players could interact with the board in meaningful ways. Random bot movements were also integrated to simulate an AI opponent.</p>
+                </div>
+                <div class="milestone-section">
+                    <h4>4.Leaderboard and Game Statistics: Tracking Performance</h4>
+                    <p><b>Overview:</b> The leaderboard and game statistics features were developed to track player progress and display key information such as scores, play time, and move history. This provides players with insights into their performance and adds competitive elements to the game.</p>
+
+                <img src="../img/SprintImages/UserIntput2.png" alt="Start Screen" style="height:300px;width: 300px">
+                <img src="../img/SprintImages/UserInput.png" alt="User Input Screen" style="height:300px;width: 300px">
+                <img src="../img/SprintImages/Colour_Chosen.png" alt="Options for colours" style="height:300px;width: 300px">
+                <img src="../img/SprintImages/GameScreenSprint3.png" alt="Game Screen" style="height:300px;width: 300px">
+                <img src="../img/SprintImages/Game_duration_endGame.png" alt="End Screen" style="height:300px;width: 300px">
+                <img src="../img/SprintImages/LeaderBoard_Screen.png" alt="LeaderBoard" style="height:300px;width: 300px">
+                <img src="../img/SprintImages/Outliers.png" alt="Outliers   " style="height:300px;width: 300px">
+                </div>
+            </section>
+
+            <section class="milestone-card fade-in">
+                <h3>PROG: Project Website - Mira</h3>
+
+                <div class="milestone-section">
+                    <h4>1. Basic Setup: Structuring the Website</h4>
+                    <p><b>Overview:</b> In this initial sprint, the basic structure of the website was set up. This
+                        included determining the layout and how the different pages will be organized. The focus was on
+                        defining the overall structure of the website and creating a foundation for future work.</p>
+                </div>
+
+                <div class="milestone-section">
+                    <h4>2. Index Page: Landing Page Development</h4>
+                    <p><b>Overview:</b> The index page was developed to serve as the landing page of the website. It
+                        contains key information about the project, including an introduction to the game, its
+                        objectives, and an invitation to explore further details. It aims to engage visitors and get
+                        them excited about the project.</p>
+                </div>
+
+                <div class="milestone-section">
+                    <h4>3. Team Page: Introducing the Team</h4>
+                    <p><b>Overview:</b> The team page was created to introduce the members of the project team. Each
+                        member’s role, picture, and a brief description of their background and responsibilities were
+                        added to give the audience insight into who is behind the project.</p>
+                </div>
+
+                <div class="milestone-section">
+                    <h4>4. Sprints Overview: Detailing Milestones for Each Subject</h4>
+                    <p><b>Overview:</b> The sprints overview page was developed to showcase the milestones achieved
+                        during each sprint of the project. For each subject area (such as Software Engineering, Data &
+                        AI, Infrastructure, and Programming), a brief description was added to explain the tasks
+                        completed and the progress made. This page serves to highlight the key achievements of the team
+                        across the different subjects.</p>
+                </div>
+            </section>
+
+
+            <section class="milestone-card fade-in">
+                <div class="milestone-icon">🖥️</div>
+                <h3>Infra # 6: Script to export DB to CSV - Hildo, Attiqa</h3>
+                <div class="milestone-section">
+                    <p><b>1: Shell Script Development</b></p>
+                    <p>Created a shell script to automate the export of game session statistics from the PostgreSQL
+                        database on the Linux server.</p>
+                    <ul>
+                        <li>The script uses the <code>psql</code> command-line tool to connect to the database securely.
+                        </li>
+                        <li>It executes a SQL query to select relevant data and outputs the results to a CSV file.</li>
+                        <li>Script includes checks to ensure the output directory and permissions are correctly
+                            handled.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="milestone-section">
+                    <p><b>2: Testing on VM and Server</b></p>
+                    <p>The export process was tested thoroughly both on a local virtual machine and the actual Linux
+                        server:</p>
+                    <ul>
+                        <li>Confirmed script functionality on the local VM before deployment.</li>
+                        <li>Tested the same script on the server with real data to verify correct operation.</li>
+                        <li>CSV output was reviewed and validated for correct formatting and data accuracy.</li>
+                    </ul>
+                </div>
+
+                <div class="milestone-section">
+                    <p><b>3: Design Document and Reporting</b></p>
+                    <p>The design document provided for this task was reviewed, elaborated, and updated:</p>
+                    <ul>
+                        <li>Documented the full export process, including command structure and setup steps.</li>
+                        <li>Added test results with example outputs and error handling notes.</li>
+                        <li>Exported and submitted the updated design document as a PDF.</li>
+                    </ul>
+                </div>
+
+                <div class="milestone-section">
+                    <p><b>4: Optional Features</b></p>
+                    <p>These features were considered optionally and we have done this too:</p>
+                    <ul>
+                        <li>Scheduling automatic exports using <code>cron</code> and <code>crontab</code>.</li>
+                        <li>Converting exported CSV files to JSON format for use in the web interface.</li>
+                    </ul>
+                </div>
+
+                <div class="milestone-section">
+                    <p><b>4: Summary of Completed Tasks</b></p>
+                    <ul>
+                        <li> Shell script created for CSV export</li>
+                        <li> Tested both locally and on the server</li>
+                        <li> Design document updated and submitted as PDF</li>
+                    </ul>
+                </div>
+                <a href="https://drive.google.com/drive/folders/1H-6W5K2mhjrf1ch2_sBh67HfSPzWOy0d">To see More Details</a>
+
+            </section>
+
+            <section class="milestone-card fade-in">
+                <div class="milestone-icon">🖥️</div>
+                <h3>Infra # 7: Deploy website on Server - Attiqa, Mira</h3>
+                <div class="milestone-section">
+                    <p><b>1: Deployed Blockade Website on Team Server</b></p>
+                    <p>The Blockade website was deployed to the team server successfully. The deployment followed all
+                        non-functional requirements set in the design document from Sprint 2:</p>
+                    <ul>
+                        <li> Webpages placed in the proper directory structure (<code>/var/www/html</code>, <code>/var/www/html/html</code>,
+                            <code>/var/www/html/css</code>, <code>/var/www/html/js</code>, etc.).
+                        </li>
+                        <li> All assets (images, CSS, JS) are properly linked and functional.</li>
+                        <li> Permissions and ownership are correctly set: files <code>rw-r--r--</code>, folders <code>rwxr-xr-x</code>,
+                            and ownership is set to <code>root:apache</code>.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="milestone-section">
+                    <p><b>2: Organized Folder Structure for Website Assets</b></p>
+                    <p>The website’s file structure is organized to align with best practices:</p>
+                    <ul>
+                        <li><code>index.html</code> located in the <code>/var/www/html</code> directory as the entry
+                            point.
+                        </li>
+                        <li>Supporting HTML pages placed in the <code>/var/www/html/html</code> folder.</li>
+                        <li>CSS files in the <code>/var/www/html/css</code> folder.</li>
+                        <li>JavaScript files stored in the <code>/var/www/html/js</code> folder.</li>
+                        <li>Images stored in the <code>/var/www/html/img</code> folder.</li>
+                    </ul>
+                </div>
+
+                <div class="milestone-section">
+                    <p><b>3: Applied Non-Functional Requirements</b></p>
+                    <p>All non-functional requirements were implemented:</p>
+                    <ul>
+                        <li> All file names are lowercase, ASCII-only, and free of spaces.</li>
+                        <li> All files are UTF-8 encoded to ensure compatibility.</li>
+                        <li> Permissions and ownership of files and folders set correctly for secure access.</li>
+                        <li> Folder structure adhered to, with distinct subfolders for each type of asset.</li>
+                    </ul>
+                </div>
+                <div class="milestone-section">
+                    <p><b>4: Website Testing and Validation</b></p>
+                    <p>After deployment, the website was tested to ensure everything was functional:</p>
+                    <ul>
+                        <li> Verified that the website is accessible via the server’s IP .</li>
+                        <li> Ensured that all links, images, and media files load correctly.</li>
+                        <li> Confirmed that the CSS and JS files are applied properly across the website.</li>
+                    </ul>
+                </div>
+                <a href="http://10.134.178.37/">Click here to visit the website </a>
+            </section>
+
+
+            <section class="milestone-card fade-in">
+                <div class="milestone-icon">📊</div>
+                <h3>Data # 5: Rule based game play intelligence - Daniel</h3>
+                <div class="milestone-section">
+                    <p><b>1. Game Strategy:</b></p>
+                    <p>The AI was programmed to follow a strategic approach during the game, including:</p>
+                    <ul>
+                        <li>Prioritizing the selection of medium pieces for blockades.</li>
+                        <li>Focusing on capturing the center of the board.</li>
+                        <li>Blocking the opponent’s moves when possible.</li>
+                        <li>Resorting to random moves when no viable strategy exists.</li>
+                    </ul>
+                </div>
+
+                <div class="milestone-section">
+                    <p><b>2.Rule Set Implementation:</b></p>
+                    <p>A comprehensive set of rules was implemented to guide the AI’s behavior. Key rules include:</p>
+                    <ul>
+                        <li>Selecting medium pieces to create blockades.</li>
+                        <li>Moving pieces to occupy strategic areas on the board.</li>
+                        <li>Making random legal moves when no strategic options are available.</li>
+                    </ul>
+                </div>
+
+                <div class="milestone-section">
+                    <p><b>3. AI Behavior Testing:</b></p>
+                    <p>The AI’s decision-making was thoroughly tested to ensure:</p>
+                    <ul>
+                        <li>Strategic and valid move selection based on predefined rules.</li>
+                        <li>Formation of blockades when advantageous.</li>
+                        <li>Random moves are made only when no other options exist.</li>
+                    </ul>
+                </div>
+            </section>
+            <div class="milestone-filler"></div>
+        </div>
+    </div>
+</main>
+
+<script src="../js/global.js"></script>
+<script src="../js/sprints.js"></script>
+</body>
+</html>

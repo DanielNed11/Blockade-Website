@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blockade Game Overview</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/game.css">
+</head>
+<body>
+<header class="header">
+    <nav class="navbar">
+        <a href="../index.html" class="logo">
+            <img src="../img/BLOCKADE-Photoroom.png" alt="Blockade Logo" />
+        </a>
+        <ul class="nav-links">
+            <li><a href="game.html">Game</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="sprint1.html">Sprint 1</a></li>
+            <li><a href="sprint2.html">Sprint 2</a></li>
+            <li><a href="sprint3.html">Sprint 3</a></li>
+            <li><a href="sprint4.html">Sprint 4</a></li>
+            <li><a href="download.html">Download</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="game-page">
+
+    <section class="section fade-in">
+        <h1>Master Movement. Outsmart Your Opponent. Conquer the Board.</h1>
+        <p class="tagline">Blockade is fast, sharp, and built for thinkers. Every move matters.</p>
+    </section>
+
+    <section class="section fade-in">
+        <h2>The Challenge</h2>
+        <p>
+            In Blockade, players battle on a 5×5 grid to build trees and block opponents. Roll dice, move pieces, and outplay your rival.
+        </p>
+        <div class="board-gallery">
+            <img src="../img/board2d.png" alt="View of the 2D board" class="board-image">
+            <img src="../img/board3d.png" alt="View of the 3D board" class="board-image">
+        </div>
+    </section>
+
+
+    <section class="section fade-in">
+        <h2>Game Objectives</h2>
+        <ul>
+            <li> Build trees by stacking large, medium, and small pieces of the same color.</li>
+            <li>Use your dice rolls strategically across two player colors.</li>
+            <li>Block your opponent’s progress with careful positioning.</li>
+            <li>Win by completing your final tree or making your opponent run out of moves.</li>
+        </ul>
+    </section>
+
+    <section class="section fade-in">
+        <h2>How a Turn Works</h2>
+        <p>Each turn, roll two dice – one for each of your colors. The number shown is how many movement points you get for that color.</p>
+
+        <div class="dice-explainer">
+            <div class="die" id="die1" data-color="red">🎲</div>
+            <div class="die" id="die2" data-color="yellow">🎲</div>
+            <button id="rollDiceBtn" class="dice-button">Roll Dice</button>
+            <div id="diceSummary" class="dice-summary">Click to roll!</div>
+            <div id="diceNote" class="dice-note"></div>
+        </div>
+    </section>
+
+    <section class="section fade-in">
+        <h2>Stacking a Tree</h2>
+        <p>To complete a tree, move your small and medium pieces onto a large piece of the same color.</p>
+
+        <div class="mini-board" id="treeBoard">
+            <div class="mini-tile" id="tile1">
+                <div class="piece medium" data-size="medium"></div>
+            </div>
+            <div class="mini-tile" id="tile2">
+                <div class="piece large" data-size="large"></div>
+                <div class="piece small" data-size="small"></div>
+            </div>
+            <div class="mini-tile" id="tile3"></div>
+        </div>
+
+        <p id="treeMessage" class="move-msg"></p>
+        <div class="reset-wrapper">
+            <button id="resetTree" class="reset-button">Reset</button>
+        </div>
+    </section>
+
+    <section class="section strategy-quote fade-in">
+        <blockquote>
+            "Block your opponent at the right moment and turn the board into a battlefield.
+            Move boldly — hesitation is defeat."
+        </blockquote>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section fade-in">
+        <a href="../index.html" class="start-button">← Return Home</a>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Blockade Team – All rights reserved.</p>
+</footer>
+
+<script src="../js/global.js"></script>
+<script src="../js/game.js"></script>
+</body>
+</html>

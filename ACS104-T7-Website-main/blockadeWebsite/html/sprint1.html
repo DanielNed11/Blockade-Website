@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blockade - Sprint 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/sprints.css">
+</head>
+<body>
+<header class="header">
+    <nav class="navbar">
+        <a href="../index.html" class="logo">
+            <img src="../img/BLOCKADE-Photoroom.png" alt="Blockade Logo" />
+        </a>
+        <ul class="nav-links">
+            <li><a href="game.html">Game</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="sprint1.html">Sprint 1</a></li>
+            <li><a href="sprint2.html">Sprint 2</a></li>
+            <li><a href="sprint3.html">Sprint 3</a></li>
+            <li><a href="sprint4.html">Sprint 4</a></li>
+            <li><a href="download.html">Download</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="sprints-gallery">
+    <h1 class="gallery-title">Sprint 1 Milestones</h1>
+
+    <!-- Dot Nav -->
+    <div class="dot-progress-container">
+        <div class="progress-line"></div>
+        <div class="progress-line-fill" id="progressLineFill"></div>
+        <div class="dot-nav">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    <div class="milestone-wrapper" id="milestoneWrapper">
+        <div class="milestone-track">
+            <section class="milestone-card fade-in">
+                <div class="milestone-icon">📐</div>
+                <h3>SE #1: Focusing on Analysis</h3>
+                <div class="milestone-section">
+                    <h4>1. Domain Model - Attiqa</h4>
+                    <img src="../img/SprintImages/domain_model.png" alt="Domain Model" class="milestone-image">
+                </div>
+                <div class="milestone-section">
+                    <h4>2. Wireframes (Figma) - Hildo</h4>
+                    <img src="../img/SprintImages/wireframes.png" alt="Start Screen Wireframe" class="milestone-image">
+                </div>
+
+                <div class="milestone-section">
+                    <h4>3. User Stories - Mira</h4>
+                    <p>User stories were written using the template and sorted by priority. Examples:</p>
+                    <img src="../img/SprintImages/user_stories.png" alt="User Stories Table" class="milestone-image">
+                </div>
+                <div class="milestone-section">
+                    <h4>4. Summary of Work</h4>
+                    <p>The team established a strong foundation by producing key artifacts to guide design and implementation. These include a solid domain model, interactive wireframes in Figma, prioritized user stories, and early feedback alignment on gameplay flow.</p>
+                </div>
+            </section>
+
+            <section class="milestone-card fade-in">
+                <div class="milestone-icon">📐</div>
+                <h3>SE #2: Refined Analysis + Design</h3>
+
+                <div class="milestone-section">
+                    <h4>1. Sequence Diagram - Daniel</h4>
+                    <img src="../img/SprintImages/sequence_diagram.png" alt="Sequence Diagram" class="milestone-image">
+                </div>
+
+                <div class="milestone-section">
+                    <h4>2. Design Class Diagram (DCD) - Mira</h4>
+                    <img src="../img/SprintImages/design_class.png" alt="Design Class Diagram" class="milestone-image">
+                </div>
+
+                <div class="milestone-section">
+                    <h4>3. Design Summary</h4>
+                    <p>We applied GRASP principles in designing our class structure: <em>Controller</em> (Game), <em>Creator</em> (Board), and <em>Information Expert</em> (Leaderboard). Our Presenter-first sequence established clear interaction flow between UI and logic components.</p>
+                </div>
+            </section>
+
+            <section class="milestone-card fade-in">
+                <div class="milestone-icon">📐</div>
+                <h3>SE #3: Final Version – Analysis, Design & Code</h3>
+
+                <div class="milestone-section">
+                    <h4>1. Final Domain Model - Daniel</h4>
+                    <img src="../img/SprintImages/domain_model_updated.png" alt="Final Domain Model" class="milestone-image">
+                </div>
+
+                <div class="milestone-section">
+                    <h4>2. Final Wireframes - Hildo</h4>
+                    <img src="../img/SprintImages/wireframes.png" alt="Final Wireframes Overview" class="milestone-image">
+                </div>
+
+                <div class="milestone-section">
+                    <h4>3. Final User Stories - Mira</h4>
+                    <img src="../img/SprintImages/user_stories_updated.png" alt="Final User Stories" class="milestone-image">
+                </div>
+                <div class="milestone-section">
+                    <h4>4. Sequence Diagram - Daniel</h4>
+                    <img src="../img/SprintImages/sequence_diagram.png" alt="Final Sequence Diagram" class="milestone-image">
+                </div>
+                <div class="milestone-section">
+                    <h4>5. Final Design Class Diagram - Mira</h4>
+                    <img src="../img/SprintImages/design_class_updated.png" alt="Final Design Class Diagram" class="milestone-image">
+                </div>
+
+                <div class="milestone-section">
+                    <h4>6. Java Code Implementation, GRASP & Design Principles</h4>
+                    <p>We documented our use of GRASP patterns:</p>
+                    <ul>
+                        <li><strong>Information Expert</strong> – Board manages cells and piece logic</li>
+                        <li><strong>Creator</strong> – Game creates players, Board creates cells</li>
+                        <li><strong>Controller</strong> – Game handles flow and turn transitions</li>
+                        <li><strong>Low Coupling</strong> – Player is abstracted via an interface</li>
+                        <li><strong>High Cohesion</strong> – Each class has one focused responsibility</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="milestone-card fade-in">
+                <div class="milestone-icon">🖥️</div>
+                <h3>INFRA #1: Linux Server – Accounts & SSH - Daniel</h3>
+                <div class="milestone-section">
+                    <p>We set up our team’s Linux server with user accounts, group management, sudo access, and secure SSH login using key-based authentication. The initial team account was removed after validation.</p>
+                </div>
+
+                <div class="milestone-section">
+                    <h4>Accounts & Permissions</h4>
+                    <ul>
+                        <li>Created user accounts: <code>attiqa_maryam</code>, <code>daniel_nedyalkov</code>, <code>hildo_araujo</code>, <code>mira_peeva</code></li>
+                        <li>Assigned users to group <code>project</code></li>
+                        <li>Added sudo access via custom file in <code>/etc/sudoers.d</code></li>
+                    </ul>
+                </div>
+
+                <div class="milestone-section">
+                    <h4>SSH Configuration</h4>
+                    <ul>
+                        <li>Generated <code>ed25519</code> key pairs per user</li>
+                        <li>Configured SSH login using public/private keys</li>
+                        <li>Disabled password login by editing <code>sshd_config</code></li>
+                    </ul>
+                </div>
+
+                <div class="milestone-section">
+                    <h4>Testing Summary</h4>
+                    <ul>
+                        <li>✅ SSH login via key: OK</li>
+                        <li>✅ Group membership: OK</li>
+                        <li>✅ Sudo access: OK</li>
+                        <li>❌ Login with team account: blocked as expected</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="milestone-card fade-in">
+                <div class="milestone-icon">🖥️</div>
+                <h3>INFRA #2: PostgreSQL Database Setup - Daniel, Attiqa</h3>
+                <div class="milestone-section">
+                    <p>We installed and configured a PostgreSQL database server, secured remote access, created project-specific users and databases, and verified connectivity from local machines and Java apps.</p>
+                </div>
+
+                <div class="milestone-section">
+                    <h4>Installation & Configuration</h4>
+                    <ul>
+                        <li>Installed PostgreSQL using <code>dnf</code> and initialized the DB</li>
+                        <li>Enabled and started PostgreSQL service on boot</li>
+                        <li>Configured <code>postgresql.conf</code> and <code>pg_hba.conf</code> for remote access</li>
+                        <li>Set firewall rules for port <code>5432</code></li>
+                    </ul>
+                </div>
+                <div class="milestone-section">
+                    <h4>Database & User Setup</h4>
+                    <ul>
+                        <li>Created user <code>game</code> with secure password</li>
+                        <li>Created database <code>game</code> and granted full privileges</li>
+                        <li>Changed default <code>postgres</code> password</li>
+                    </ul>
+                </div>
+                <div class="milestone-section">
+                    <h4>Testing Summary</h4>
+                    <ul>
+                        <li>✅ DB is listening on <code>5432</code></li>
+                        <li>✅ Connection allowed from external IPs</li>
+                        <li>✅ Login to DB with <code>game</code>: OK</li>
+                        <li>✅ Java connection in IntelliJ: OK</li>
+                        <li>❌ Login with default <code>postgres</code> account: blocked</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="milestone-card fade-in">
+                <div class="milestone-icon">🖥️</div>
+                <h3>INFRA #3: Network Design – Packet Tracer Simulation - Hildo, Mira</h3>
+
+                <div class="milestone-section">
+                    <p>We designed and tested a simulated network topology using Cisco Packet Tracer. It includes two team PCs, our server, a friendly team’s server, a router, and switches. The simulation validates full connectivity and IP configuration between all nodes.</p>
+                </div>
+
+                <div class="milestone-section">
+                    <h4>Network Configuration</h4>
+                    <ul>
+                        <li>Router: Cisco 2911 with 3 <code>GigabitEthernet</code> interfaces</li>
+                        <li>Two switches (Cisco 2960), two PCs, two servers</li>
+                        <li>Separate subnets for PCs and servers, connected through router</li>
+                        <li>Open port <code>5432</code> on both servers (PostgreSQL)</li>
+                    </ul>
+                    <img src="../img/SprintImages/packetTracer.png" alt="Packet Tracer topology" class="milestone-image" />
+                </div>
+                <div class="milestone-section">
+                    <h4>IP Addressing Overview</h4>
+                    <ul>
+                        <li><strong>PC1:</strong> 10.108.107.98 /21</li>
+                        <li><strong>PC2:</strong> 10.108.107.252 /21</li>
+                        <li><strong>Our server:</strong> 10.134.178.37 /21</li>
+                        <li><strong>Friendly server:</strong> 10.134.178.36 /21</li>
+                        <li><strong>Router:</strong> 10.108.107.1 and 10.134.178.1</li>
+                    </ul>
+                </div>
+                <div class="milestone-section">
+                    <h4>Testing Summary</h4>
+                    <ul>
+                        <li>✅ PC to PC ping: successful</li>
+                        <li>✅ PC to server ping: successful</li>
+                        <li>✅ Packet Tracer simulation tested and documented with screenshots</li>
+                    </ul>
+                    <img src="../img/SprintImages/ping_packet_tracer.png" alt="Ping test results" class="milestone-image" />
+                </div>
+            </section>
+            <section class="milestone-card fade-in">
+                <div class="milestone-icon">📊</div>
+                <h3>DATA & AI #1: Game Statistics Page Design - Mira, Hildo</h3>
+
+                <div class="milestone-section">
+                    <p>We designed the post-game statistics screen and leaderboard layout. This deliverable focused on sketching out the structure and data visualizations that will be shown after a game ends.</p>
+                </div>
+
+                <div class="milestone-section">
+                    <h4>Game Statistics Page</h4>
+                    <ul>
+                        <li>Displays the winner and total play time</li>
+                        <li>Shows number of turns, average turn duration, and score per player</li>
+                        <li>Includes a visual breakdown of move durations with outlier detection</li>
+                    </ul>
+                    <img src="../img/SprintImages/game_statistics.png" alt="Statistics page wireframe" class="milestone-image" />
+                </div>
+
+                <div class="milestone-section">
+                    <h4>Leaderboard Screen</h4>
+                    <ul>
+                        <li>Player rank, name, games played, wins/losses</li>
+                        <li>Win percentage, average moves per game, and average turn duration</li>
+                        <li>Sortable by any field (e.g. by score, win rate, speed)</li>
+                    </ul>
+                    <img src="../img/SprintImages/leaderboard_wireframe.png" alt="Leaderboard wireframe" class="milestone-image" />
+                </div>
+
+                <div class="milestone-section">
+                    <h4>Graphs & Tables</h4>
+                    <ul>
+                        <li>Bar chart showing duration of each move per player</li>
+                        <li>Highlighted outliers based on dataset comparison</li>
+                        <li>Leaderboard table designed with example data</li>
+                    </ul>
+                    <img src="../img/SprintImages/graphs.png" alt="Graphs and tables mock-up" class="milestone-image" />
+                </div>
+
+                <div class="milestone-section">
+                    <p><em>Note: Current wireframes do not yet reflect the final game UI, but focus on capturing required data components and layout logic. These will be aligned with the game style in future iterations.</em></p>
+                </div>
+            </section>
+            <section class="milestone-card fade-in">
+                <div class="milestone-icon">📊</div>
+                <h3>DATA & AI #2: Database Design</h3>
+                <div class="milestone-section">
+                    <p>We designed an initial relational database schema to support player tracking, game statistics, and leaderboard functionality. The deliverable included a full ERD, a data dictionary, and example data tables for all entities.</p>
+                </div>
+                <div class="milestone-section">
+                    <h4>Entity Relationship Diagram (ERD) - Attiqa, Mira</h4>
+                    <ul>
+                        <li><strong>Core Tables:</strong> Player, Game, Board, Piece</li>
+                        <li><strong>Relationships:</strong>
+                            <ul>
+                                <li>Player → Game (PlayerID)</li>
+                                <li>Game → Board and Piece (GameID)</li>
+                                <li>Piece → Board (CellID)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <img src="../img/SprintImages/erd.png" alt="ERD diagram" class="milestone-image" />
+                </div>
+                <div class="milestone-section">
+                    <h4>Data Dictionary - Mira</h4>
+                    <ul>
+                        <li>Every table includes field descriptions and data types</li>
+                        <li>Relationship explanations are provided between all linked entities</li>
+                    </ul>
+                    <img src="../img/SprintImages/data_dictionary.png" alt="Data dictionary example" class="milestone-image" />
+                </div>
+
+                <div class="milestone-section">
+                    <h4>Example Data - Mira</h4>
+                    <ul>
+                        <li>Populated tables for Player, Game, Board, and Piece</li>
+                        <li>Consistent keys and representative values to cover multiple scenarios</li>
+                    </ul>
+                    <img src="../img/SprintImages/example_data.png" alt="Example data tables" class="milestone-image" />
+                </div>
+                <div class="milestone-section">
+                    <p><em>Note: While this schema reflects our early design, the current implementation has evolved. The data model will be revised to align with the final game logic and statistics tracking features.</em></p>
+                </div>
+            </section>
+            <section class="milestone-card fade-in">
+                <div class="milestone-icon">📊</div>
+                <h3>DATA & AI #3: PostgreSQL Database Implementation</h3>
+                <div class="milestone-section">
+                    <p>We created a PostgreSQL database on our remote server to support statistics, leaderboard functionality, and game data storage. This setup includes schema creation scripts, example data insertion, and working remote access credentials for testing.</p>
+                </div>
+                <div class="milestone-section">
+                    <h4>Database Setup - Daniel, Hildo</h4>
+                    <ul>
+                        <li>🗄️ Host: <code>10.134.178.37</code></li>
+                        <li>🔐 Username: <code>game</code></li>
+                        <li>🔑 Password: <code>7sur7</code></li>
+                        <li>📡 Port: <code>5432</code></li>
+                        <li>📁 Database: <code>game</code></li>
+                    </ul>
+                </div>
+
+                <div class="milestone-section">
+                    <h4>Schema Design - Attiqa</h4>
+                    <ul>
+                        <li>Tables created: <code>PLAYERS</code>, <code>GAMES</code>, <code>BOARDS</code>, <code>PIECES</code></li>
+                        <li>Includes primary and foreign keys with cascade rules</li>
+                        <li>Supports storing game outcomes, board state, and piece details</li>
+                    </ul>
+                </div>
+
+                <div class="milestone-section">
+                    <h4>Example Data Inserted - Mira</h4>
+                    <ul>
+                        <li>4 players with different scores and emails</li>
+                        <li>3 sample games with varying completion status</li>
+                        <li>Board coordinates and placed pieces initialized</li>
+                    </ul>
+                    <img src="../img/SprintImages/dml_example.png" alt="Example insert data" class="milestone-image" />
+                </div>
+                <div class="milestone-section">
+                    <p><em>Note: This schema and test data were created early in development. Our current game implementation has since evolved, and the live database structure will be updated to reflect final design choices.</em></p>
+                </div>
+            </section>
+
+            <div class="milestone-filler"></div>
+        </div>
+    </div>
+</main>
+
+<script src="../js/global.js"></script>
+<script src="../js/sprints.js"></script>
+</body>
+</html>

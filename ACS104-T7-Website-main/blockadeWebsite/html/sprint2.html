@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blockade - Sprint 2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Russo+One&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/sprints.css">
+</head>
+<body>
+<header class="header">
+    <nav class="navbar">
+        <a href="../index.html" class="logo">
+            <img src="../img/BLOCKADE-Photoroom.png" alt="Blockade Logo"/>
+        </a>
+        <ul class="nav-links">
+            <li><a href="game.html">Game</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="sprint1.html">Sprint 1</a></li>
+            <li><a href="sprint2.html">Sprint 2</a></li>
+            <li><a href="sprint3.html">Sprint 3</a></li>
+            <li><a href="sprint4.html">Sprint 4</a></li>
+            <li><a href="download.html">Download</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="sprints-gallery">
+    <h1 class="gallery-title">Sprint 2 Milestones</h1>
+
+    <!-- Dot Nav -->
+    <div class="dot-progress-container">
+        <div class="progress-line"></div>
+        <div class="progress-line-fill" id="progressLineFill"></div>
+        <div class="dot-nav">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    <div class="milestone-wrapper" id="milestoneWrapper">
+        <div class="milestone-track">
+
+            <section class="milestone-card fade-in">
+                <h3>Prog : Application beta version - Daniel, Hildo, Mira, Attiqa</h3>
+                <div class="milestone-section">
+                    <p><b>1: Game Screen Implementation Using MVP</b></p>
+                    <p>Created the main game screen using the Model-View-Presenter (MVP) pattern:</p>
+                    <ul>
+                        <li><b>Model:</b> Manages the game logic (e.g., turn order, move validation, score updates).
+                        </li>
+                        <li><b>View:</b> JavaFX layout that shows the game board, player info, and controls.</li>
+                        <li><b>Presenter:</b> Handles user interactions (e.g., pawn movement), updates the model, and
+                            refreshes the view.
+                        </li>
+                    </ul>
+                    <p>The screen supports multiple turns between players, updates the board visually after each move,
+                        and reflects current game stats. For now, the game plays in a simplified form without special
+                        rules or end-game detection.</p>
+                </div>
+                <div class="milestone-section">
+                    <p><b>2: User Input Screen</b></p>
+                    <p>Created a user input screen for players to enter their names and choose game settings (such as
+                        color and preferences).</p>
+                    <ul>
+                        <li>The screen allows users to input their names and customize their game settings, which are
+                            saved for the duration of the game session.
+                        </li>
+                        <li>The layout follows the wireframe with basic styling and functionality.</li>
+                    </ul>
+                    <img src="../img/SprintImages/UserIntput2.png" alt="User Input Screen" style="height:300px;width: 300px">
+                    <img src="../img/SprintImages/UserInput.png" alt="User Input Screen" style="height: 300px;width:300px">
+                </div>
+                <div class="milestone-section">
+                    <p><b>3: Simplified Game Logic Implementation</b></p>
+                    <p>Implemented simplified game logic for handling turns and player actions. The logic focuses on
+                        basic gameplay without additional special rules (e.g., no game-ending conditions yet).</p>
+                    <ul>
+                        <li>Focused on essential actions like moving pieces and updating scores.</li>
+                        <li>Refined logic for handling user interactions and ensuring smooth transitions between
+                            turns.
+                        </li>
+                    </ul>
+                </div>
+                <div class="milestone-section">
+                    <p><b>4: Database and Game Data Storage</b></p>
+                    <p>Set up basic database schema for storing player data, game moves, and scores for future use in
+                        the leaderboard and statistics screens.</p>
+                    <ul>
+                        <li>Created tables for game state, players, and moves.</li>
+                        <li>Prepared the framework for storing and retrieving data as needed.</li>
+                    </ul>
+                </div>
+
+            </section>
+
+
+            <section class="milestone-card fade-in">
+                <div class="milestone-icon">🖥️</div>
+                <h3>Infra Sprint 01: Rework and resubmission - Hildo, Daniel</h3>
+
+                <p><b>🔧 Improvements Based on Feedback</b></p>
+
+                <h4>1. Sudoers File Cleanup</h4>
+                <p>Based on technical feedback, we identified and removed an unused project_admins.save.1 file with
+                    incorrect 440 permissions in /etc/sudoers.d. This cleanup ensures secure sudo access and avoids
+                    potential conflicts.</p>
+
+                <h4>2. PostgreSQL Connection Logging</h4>
+                <p>We reconfigured PostgreSQL to enable detailed connection logging, following coach suggestions. A test
+                    case was added to validate that each client connection is now correctly logged in the database
+                    logs.</p>
+
+                <h4>3: Subnet Mask & Firewall Verification</h4>
+                <p>We corrected the subnet mask configuration across our servers and verified open ports using
+                    firewall-cmd. Screenshots were retaken on the actual VMs instead of Packet Tracer to ensure
+                    authenticity and accuracy.</p>
+
+            </section>
+
+            <section class="milestone-card fade-in">
+                <div class="milestone-icon">🖥️</div>
+                <h3>Infra # 4: Web Server - Hildo</h3>
+                <div class="milestone-section">
+                    <div class="text-column">
+                        <p><b> 🌐 Web Server Setup</b></p>
+                        <h4>1: Apache Installation & Auto-Start</h4>
+                        <p>Apache was installed and configured to start automatically on reboot, ensuring the web server
+                            runs continuously.</p>
+                    </div>
+                    <div class="image-column">
+                        <img src="../img/SprintImages/Infra4_Webserver.png" alt="Web server">
+                    </div>
+
+
+                    <h4>2: Firewall Configuration</h4>
+                    <p>Port 80 was opened in the firewall to allow external access to the web server via HTTP.</p>
+
+                    <h4>3: Basic Website Deployment</h4>
+                    <p>An index.html file and a team picture were added to the default DocumentRoot at <code>/var/www/html</code>.
+                    </p>
+
+                    <h4>4: File & Folder Permissions</h4>
+                    <p>Files were set to <code>rw-r--r--</code> and folders to <code>rwxr-xr-x</code> with ownership
+                        <code>root:apache</code>.</p>
+
+                    <h4>5: Folder Structure & Naming</h4>
+                    <p>Organized content into subfolders: <code>html</code>, <code>img</code>, <code>css</code>, <code>js</code>,
+                        and <code>media</code> using lowercase, ASCII-only filenames without spaces.</p>
+
+                    <h4>6: UTF-8 Encoding</h4>
+                    <p>All webpage files are UTF-8 encoded to ensure proper character rendering across different
+                        systems.</p>
+                </div>
+
+            </section>
+
+            <section class="milestone-card fade-in">
+                <div class="milestone-icon"><img src="../img/SprintImages/Wireshark.png" alt="Wireshark" style="height: 100px;width:100px;display:block;">
+                </div>
+                <h3>Infra # 5: Network Sniffing - Mira</h3>
+                <div class="milestone-section">
+                    <p><b>1: Tcpdump Setup</b></p>
+
+                    <p>Installed tcpdump and identified the active network interface (ens18) to monitor traffic on the
+                        server.
+                    </p>
+                </div>
+                <div class="milestone-section">
+                    <p><b>2: HTTP Traffic Capture</b></p>
+                    <p>Captured HTTP traffic with Wireshark (PC) and tcpdump (server), then verified the session in
+                        Apache logs and analyzed it using Wireshark.</p>
+                </div>
+                <div class="milestone-section">
+                    <p><b>3: PostgreSQL Traffic Capture</b></p>
+                    <p>Captured and analyzed database traffic on port 5432; verified PostgreSQL logs and confirmed
+                        visible queries and credentials without SSL.</p>
+                </div>
+                <div>
+                    <a href="https://docs.google.com/document/d/1dkLcUpd7tvj7qNn2pgfNiiRNTXr9pSeHUH7vtFuNeJg/edit?tab=t.0">To see more detail visit this document!</a>
+                </div>
+            </section>
+
+            <section class="milestone-card fade-in">
+                <div class="milestone-icon">📊</div>
+                <h3>Data # 4: Game Statistics implementation - Attiqa, Daniel</h3>
+                <div class="milestone-section">
+                    <p><b>1: Game Statistics at the End of the Game</b></p>
+                    <p>Implemented a screen that pops up at the end of the game showing the following summary
+                        statistics:</p>
+                    <ul>
+                        <li>Player who won the game.</li>
+                        <li>Total play time, calculated from game start to end.</li>
+                        <li>Total number of turns/moves per player, noting that players who lost do not have additional
+                            turns once the game ends.
+                        </li>
+                        <li>Average duration per turn/move for each player.</li>
+                        <li>Score</li>
+                    </ul>
+                    <img src="../img/SprintImages/LeaderBoard_Screen.png" alt="LeaderBoard Screen " style="height: 400px;width:400px;display:block;">
+                    <p>Also, a visual presentation was added to display the duration per turn/move per player, with
+                        outliers highlighted (based on time deviations from the majority).</p>
+                </div>
+                <div class="milestone-section">
+                    <p><b>2: Leaderboard with Overall Scores</b></p>
+                    <p>The leaderboard displays player rankings based on various metrics such as:</p>
+                    <ul>
+                        <li>Rank (based on user-selected criteria).</li>
+                        <li>Player name.</li>
+                        <li>Number of games played.</li>
+                        <li>Number of wins and losses.</li>
+                        <li>Percentage of games won.</li>
+                        <li>Average number of moves per game.</li>
+                        <li>Average duration per turn/move.</li>
+                        <li>Total score</li>
+                    </ul>
+                    <p>The leaderboard is dynamically sorted based on the selected ranking metric (e.g., by number of
+                        wins, average duration per turn, etc.).</p>
+                </div>
+                <div class="milestone-section">
+                    <p><b>3: Database Design and Implementation</b></p>
+                    <p>Created the necessary tables and implemented scripts to read from and write to the PostgreSQL
+                        database. The database stores the following:</p>
+                    <ul>
+                        <li>Game data (winner, total play time, moves, etc.).</li>
+                        <li>Player data (name, statistics, etc.).</li>
+                        <li>Move data (player moves, timestamps, durations, etc.).</li>
+                    </ul>
+                    <p>Implemented SQL DML and DQL scripts to handle data operations required for the end of game and
+                        leaderboard screens.</p>
+                </div>
+                <div class="milestone-section">
+                    <p><b>4: Scripts/Methods to Read and Write Data to the Database</b></p>
+                    <p>Developed Java methods using JDBC to connect to the database, read game and player data, and
+                        update the database with relevant statistics. The data operations cover:</p>
+                    <ul>
+                        <li>Storing game statistics (end-of-game data).</li>
+                        <li>Retrieving leaderboard data for displaying rankings.</li>
+                    </ul>
+                    <p>These scripts will trigger when a game ends or when the leaderboard screen is requested, ensuring
+                        up-to-date game data is displayed.</p>
+                </div>
+                <div class="milestone-section">
+                    <p><b>5: End of Game and Leaderboard Screen Implementation</b></p>
+                    <p>Created JavaFX screens to display:</p>
+                    <ul>
+                        <li>End of game statistics (winner, play time, turns/moves per player, etc.).</li>
+                        <li>Leaderboard with sortable columns for player rankings based on selected metrics.</li>
+                    </ul>
+                    <p>Implemented JavaFX code using the MVP pattern (View for layout, Presenter for logic) to display
+                        dynamic and interactive screens. Each screen includes:</p>
+                    <ul>
+                        <li>JavaFX code for the end-of-game statistics screen (with graphs for turn durations).</li>
+                        <li>JavaFX code for the leaderboard screen, with sorting functionality.</li>
+                        <img src="../img/SprintImages/Game_duration_endGame.png" alt="  End Screen " style="height: 400px;width:400px;display:inline-block; margin: 20px;">
+                        <img src="../img/SprintImages/Outliers.png" alt="  Graphical Representation Screen " style="height: 400px;width:400px;display:inline-block;margin: 20px;">
+                    </ul>
+                </div>
+            </section>
+            <div class="milestone-filler"></div>
+        </div>
+    </div>
+</main>
+
+<script src="../js/global.js"></script>
+<script src="../js/sprints.js"></script>
+</body>
+</html>
